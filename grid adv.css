@@ -1,0 +1,44 @@
+.parent{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "side main-content"
+    "footer footer"
+    ;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 200px 200px 200px;
+}
+.header{
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    font-size: 30px;
+}
+.side{
+    background-color: aqua;
+    grid-area: side;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.main-content{
+    background-color: cornsilk;
+    display: flex;
+    grid-area: main-content;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.footer{
+    background-color: crimson;
+    display: flex;
+    grid-area: footer;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+
+}
